@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical" >
+
+    <LinearLayout android:layout_width="wrap_content"
+    			  android:layout_height="wrap_content"
+    			  android:orientation="horizontal" >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:hint="Paste Instagram URL"
+            android:singleLine="true"
+            android:textSize="13dp"
+            android:id="@+id/urlTxt"
+            android:textColor="#7F7F7F"            
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:width="290dp"/>
+        <Button 
+    	android:id="@+id/pasteButton"
+    	android:text="Paste"
+    	android:textColor="#fff"    	
+    	android:background="#517fa4"    	
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="20dp"
+    	android:onClick="paste" />
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="fill_parent"
+        		  android:id="@+id/imagesLayout"        		  
+    			  android:layout_height="wrap_content"
+    			  android:orientation="vertical"
+    			  android:visibility="gone" >
+        <ImageView android:id="@+id/imageFromIG"
+            	   android:layout_width="wrap_content"
+            	   android:layout_height="wrap_content"
+            	   android:layout_gravity="center"
+            	   android:maxWidth="130dp"
+            	   android:maxHeight="130dp"/>
+        <Button 
+    	android:id="@+id/saveButton"
+    	android:text="@string/saveImage"
+    	android:textColor="#fff"    	
+    	android:padding="5dp"
+    	android:background="#517fa4"    	
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="10dp"
+    	android:layout_gravity="center"
+    	android:onClick="onInstaDownload" />
+    </LinearLayout>
+
+</LinearLayout>

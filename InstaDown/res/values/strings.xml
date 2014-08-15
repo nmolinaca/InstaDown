@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">InstaDown</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="loading">Loading</string>
+    <string name="pleaseWait">Please Wait..</string>
+	<string name="saveImage">Save Image</string>
+	<string name="downloading">Downloading..</string>
+    <string name="imagesNamePattern">yyyyMMdd_HHmmss</string>
+    <string name="imagesUrl">/InstaDown/InstaDownImages</string>
+    <string name="videosUrl">/InstaDown/InstaDownVideos</string>
+    <string name="INSTADOWN_CACHE_LIST">INSTADOWN_CACHE_LIST</string>
+    
+</resources>
