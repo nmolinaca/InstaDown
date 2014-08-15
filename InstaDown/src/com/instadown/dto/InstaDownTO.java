@@ -4,6 +4,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.Date;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -16,6 +17,11 @@ public class InstaDownTO {
 	private ImageView IGImageView;
 	private String IGImageUrl;
 	private String IGVideoUrl;
+	private Date downloadedDate = new Date();
+
+	public Date getDownloadedDate() {
+		return downloadedDate;
+	}
 
 	public String getIGImageUrl() {
 		return IGImageUrl;
